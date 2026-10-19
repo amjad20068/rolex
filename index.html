@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROLEX — Official Luxury Timepieces</title>
+    <meta name="description" content="Explore the official collection of Rolex luxury timepieces. Superlative Chronometer certified Swiss watches.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: auto !important;
+        }
+
+        :root {
+            --rolex-green: #006039;
+            --rolex-green-dark: #004728;
+            --rolex-gold: #A37E2C;
+            --text-dark: #111111;
+            --text-muted: #555555;
+            --bg-light: #f8f8f9;
+            --border-light: #e5e5e7;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: var(--text-dark);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        
+        .rolex-topbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .rolex-topbar-inner {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            min-height: 84px;
+        }
+
+        .rolex-topbar-spacer {
+            visibility: hidden;
+            grid-column: 1;
+        }
+
+        
+        .rolex-brand-lockup {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            text-decoration: none;
+            grid-column: 2;
+        }
+
+        .rolex-crown-logo {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .rolex-brand-name {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: var(--rolex-green);
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        
+        .rolex-nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 32px;
+            grid-column: 3;
+        }
+
+        .rolex-nav-link {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #333333;
+            padding: 4px 6px;
+        }
+
+        .rolex-nav-link.active {
+            color: var(--rolex-green);
+        }
+
+        
+        #home {
+            background-color: #fafafa;
+            padding: 60px 0 70px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .hero-rolex-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-rolex-text {
+            flex: 1.1;
+        }
+
+        .hero-rolex-tag {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--rolex-green);
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .hero-rolex-title {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-dark);
+            margin-bottom: 18px;
+        }
+
+        .hero-rolex-desc {
+            font-size: 16px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 28px;
+            max-width: 520px;
+        }
+
+        .hero-rolex-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-rolex-primary {
+            background-color: var(--rolex-green);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 13px 28px;
+            border-radius: 3px;
+            border: 1px solid var(--rolex-green);
+            display: inline-block;
+        }
+
+        .btn-rolex-secondary {
+            background-color: transparent;
+            color: var(--text-dark);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 13px 28px;
+            border-radius: 3px;
+            border: 1px solid #cccccc;
+            display: inline-block;
+        }
+
+        .hero-rolex-visual {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-rolex-visual img {
+            max-height: 390px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        
+        #products {
+            padding: 70px 0 90px 0;
+            background-color: #ffffff;
+        }
+
+        .rolex-filter-bar {
+            padding: 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #eeeeee;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .rolex-filter-group {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .rolex-filter-item {
+            font-size: 13px;
+            font-weight: 600;
+            color: #444444;
+        }
+
+        .rolex-filter-sort {
+            font-size: 13px;
+            font-weight: 600;
+            color: #444444;
+        }
+
+        .products-section-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .products-title-centered {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 38px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .products-subtitle-centered {
+            font-size: 15px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        
+        .rolex-showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .rolex-card {
+            background-color: #ffffff;
+            border-radius: 6px;
+            border: 1px solid #e5e5e5;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .rolex-card-media {
+            background-color: #f7f7f8;
+            padding: 30px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            min-height: 280px;
+            border-bottom: 1px solid #eeeeee;
+            display: block;
+        }
+
+        .rolex-card-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--rolex-green);
+            background-color: #eaf4ee;
+            padding: 4px 8px;
+            border-radius: 3px;
+        }
+
+        .rolex-card-img-wrap {
+            width: 100%;
+            height: 210px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rolex-card-img {
+            max-height: 200px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .rolex-card-body {
+            padding: 20px 18px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        .rolex-card-series {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #888888;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .rolex-card-title {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+        }
+
+        .rolex-card-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.4;
+            margin-bottom: 16px;
+            min-height: 34px;
+        }
+
+        .rolex-card-price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .rolex-card-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--rolex-green);
+        }
+
+        .rolex-card-price-cur {
+            font-size: 11px;
+            font-weight: 600;
+            color: #888888;
+        }
+
+        .rolex-card-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-card-view-details {
+            flex: 1;
+            background-color: #ffffff;
+            color: var(--rolex-green);
+            border: 1px solid var(--rolex-green);
+            padding: 9px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .btn-card-whatsapp {
+            background-color: #25D366;
+            color: #ffffff;
+            width: 36px;
+            height: 36px;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .whatsapp-svg-icon {
+            width: 16px;
+            height: 16px;
+            fill: #ffffff;
+        }
+
+        
+        .rolex-modal-backdrop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        
+        .rolex-modal-backdrop:target {
+            display: flex;
+        }
+
+        
+        .rolex-modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: default;
+        }
+
+        .rolex-modal-card {
+            background-color: #ffffff;
+            border-radius: 6px;
+            max-width: 840px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+        }
+
+        .rolex-modal-close-btn {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: #eeeeee;
+            color: #333333;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .rolex-modal-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+        }
+
+        .rolex-modal-media-col {
+            background-color: #f7f7f8;
+            padding: 35px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-right: 1px solid #eeeeee;
+        }
+
+        .modal-badge-tag {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--rolex-green);
+            background-color: #eaf4ee;
+            padding: 4px 10px;
+            border-radius: 3px;
+            margin-bottom: 16px;
+        }
+
+        .modal-img-container {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-watch-image {
+            max-height: 260px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .modal-cert-footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #777777;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .modal-cert-crown {
+            color: var(--rolex-gold);
+            font-size: 14px;
+        }
+
+        .rolex-modal-info-col {
+            padding: 34px 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-brand-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .modal-brand-crown {
+            height: 20px;
+            width: auto;
+        }
+
+        .modal-brand-text {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--rolex-green);
+        }
+
+        .modal-watch-title {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .modal-watch-ref {
+            font-size: 12px;
+            font-weight: 600;
+            color: #888888;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .modal-watch-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin-bottom: 18px;
+        }
+
+        .modal-price-box {
+            background-color: #f7f9f8;
+            border-left: 3px solid var(--rolex-green);
+            padding: 10px 14px;
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .modal-price-label {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #666666;
+        }
+
+        .modal-price-val {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--rolex-green);
+        }
+
+        .modal-specs-title {
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .modal-specs-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 22px;
+            max-height: 180px;
+            overflow-y: auto;
+            padding-right: 6px;
+        }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            line-height: 1.4;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #f4f4f4;
+        }
+
+        .spec-label {
+            color: #777777;
+            font-weight: 500;
+        }
+
+        .spec-value {
+            color: #222222;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .modal-actions-row {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .btn-modal-wa {
+            flex: 1.2;
+            background-color: var(--rolex-green);
+            color: #ffffff;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 11px 16px;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-modal-salon {
+            flex: 1;
+            background-color: transparent;
+            color: var(--text-dark);
+            border: 1px solid #cccccc;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 11px 14px;
+            border-radius: 3px;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        #about {
+            padding: 85px 0;
+            background-color: #fafafa;
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .about-rolex-flex {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-rolex-img-col {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-rolex-img-col img {
+            max-height: 380px;
+        }
+
+        .about-rolex-text-col {
+            flex: 1.2;
+        }
+
+        .about-rolex-eyebrow {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--rolex-green);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .about-rolex-title {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 34px;
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1.25;
+            margin-bottom: 18px;
+        }
+
+        .about-rolex-p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .about-rolex-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 26px;
+            padding-top: 22px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .stat-box h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--rolex-green);
+            margin-bottom: 4px;
+        }
+
+        .stat-box p {
+            font-size: 12px;
+            color: #666666;
+            line-height: 1.4;
+        }
+
+        
+        #contact {
+            padding: 85px 0;
+            background-color: #ffffff;
+        }
+
+        .contact-rolex-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-salon-info {
+            background-color: var(--bg-light);
+            border-radius: 6px;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #eeeeee;
+        }
+
+        .salon-heading {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .salon-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .salon-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .salon-item-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--rolex-green);
+            min-width: 95px;
+        }
+
+        .salon-item-value {
+            font-size: 13.5px;
+            color: #222222;
+            font-weight: 500;
+        }
+
+        .contact-whatsapp-box {
+            background-color: var(--rolex-green-dark);
+            color: #ffffff;
+            border-radius: 4px;
+            padding: 22px;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .contact-whatsapp-box h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .contact-whatsapp-box p {
+            font-size: 13px;
+            color: #bbf7d0;
+            margin-bottom: 14px;
+        }
+
+        .btn-whatsapp-large {
+            background-color: #25D366;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 1px;
+            padding: 11px 22px;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-transform: uppercase;
+        }
+
+        .contact-form-panel {
+            background-color: var(--bg-light);
+            border-radius: 6px;
+            padding: 35px;
+            border: 1px solid #eeeeee;
+        }
+
+        .form-heading {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+        }
+
+        .form-sub {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 22px;
+        }
+
+        .form-group-rolex {
+            margin-bottom: 16px;
+        }
+
+        .form-label-rolex {
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #333333;
+            margin-bottom: 6px;
+        }
+
+        .form-input-rolex, .form-select-rolex, .form-textarea-rolex {
+            width: 100%;
+            padding: 11px 13px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            font-size: 13.5px;
+            color: #111111;
+            background-color: #ffffff;
+            font-family: inherit;
+        }
+
+        .form-input-rolex:focus, .form-select-rolex:focus, .form-textarea-rolex:focus {
+            outline: none;
+            border-color: var(--rolex-green);
+        }
+
+        .form-textarea-rolex {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .btn-submit-rolex {
+            background-color: var(--rolex-green);
+            color: #ffffff;
+            border: 1px solid var(--rolex-green);
+            width: 100%;
+            padding: 13px;
+            font-size: 12.5px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        
+        footer {
+            background-color: #0c1811;
+            color: #ffffff;
+            padding: 65px 0 30px 0;
+            border-top: 1px solid var(--rolex-green);
+        }
+
+        .footer-rolex-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 45px;
+        }
+
+        .footer-crown-lockup {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .footer-crown-icon {
+            height: 34px;
+            width: auto;
+        }
+
+        .footer-brand-title {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: #ffffff;
+        }
+
+        .footer-bio {
+            font-size: 13px;
+            color: #9cb2a5;
+            line-height: 1.6;
+            max-width: 320px;
+        }
+
+        .footer-col-h4 {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 16px;
+        }
+
+        .footer-link-list {
+            list-style: none;
+        }
+
+        .footer-link-list li {
+            margin-bottom: 10px;
+        }
+
+        .footer-link-list a {
+            font-size: 13px;
+            color: #9cb2a5;
+        }
+
+        .footer-salon-desc {
+            font-size: 13px;
+            color: #9cb2a5;
+            line-height: 1.6;
+        }
+
+        .footer-bottom-row {
+            border-top: 1px solid #1a2a20;
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #688274;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-bottom-row a {
+            color: #9cb2a5;
+            margin-left: 15px;
+        }
+
+        
+        @media (max-width: 1200px) {
+            .rolex-showcase-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .rolex-topbar-inner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                padding: 14px 16px;
+                min-height: auto;
+            }
+
+            .rolex-topbar-spacer {
+                display: none;
+            }
+
+            .rolex-nav-menu {
+                justify-content: center;
+                gap: 22px;
+            }
+
+            .hero-rolex-grid {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-rolex-desc {
+                margin: 0 auto 28px auto;
+            }
+
+            .hero-rolex-actions {
+                justify-content: center;
+            }
+
+            .about-rolex-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-rolex-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .rolex-modal-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .rolex-modal-media-col {
+                border-right: none;
+                border-bottom: 1px solid #eeeeee;
+                padding: 24px;
+            }
+
+            .modal-img-container {
+                height: 200px;
+            }
+
+            .modal-watch-image {
+                max-height: 190px;
+            }
+
+            .rolex-modal-info-col {
+                padding: 24px 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .rolex-topbar-inner {
+                padding: 12px 16px;
+                gap: 10px;
+            }
+
+            .rolex-nav-menu {
+                gap: 16px;
+            }
+
+            .rolex-nav-link {
+                font-size: 11.5px;
+                letter-spacing: 1px;
+            }
+
+            .rolex-crown-logo {
+                height: 38px;
+            }
+
+            .rolex-brand-name {
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
+
+            .hero-rolex-title {
+                font-size: 32px;
+            }
+
+            .rolex-showcase-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-rolex-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-rolex-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom-row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .modal-actions-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="rolex-topbar" id="rolex-header">
+        <div class="rolex-topbar-inner">
+            <div class="rolex-topbar-spacer" aria-hidden="true"></div>
+
+            <a href="#home" class="rolex-brand-lockup" title="ROLEX — Official Luxury Timepieces">
+                <img src="logo.png" alt="ROLEX Crown Logo" class="rolex-crown-logo">
+                <span class="rolex-brand-name">ROLEX</span>
+            </a>
+
+            <nav class="rolex-nav-menu" aria-label="Main Navigation">
+                <a href="#home" class="rolex-nav-link">Home</a>
+                <a href="#products" class="rolex-nav-link active">Products</a>
+                <a href="#about" class="rolex-nav-link">About</a>
+                <a href="#contact" class="rolex-nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <div class="container">
+                <div class="hero-rolex-grid">
+                    <div class="hero-rolex-text">
+                        <span class="hero-rolex-tag">Official Rolex Showcase</span>
+                        <h1 class="hero-rolex-title">Crafted for Those Who Value Time.</h1>
+                        <p class="hero-rolex-desc">
+                            Discover the pinnacle of Swiss precision and horological mastery. Every Rolex timepiece represents supreme engineering, noble alloys, and timeless elegance.
+                        </p>
+                        <div class="hero-rolex-actions">
+                            <a href="#products" class="btn-rolex-primary">Explore Products</a>
+                            <a href="#contact" class="btn-rolex-secondary">Contact Salon</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-rolex-visual">
+                        <img src="watch_1.png" alt="Rolex Day-Date 40 Flagship Timepiece">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="container">
+
+                <div class="rolex-filter-bar">
+                    <div class="rolex-filter-group">
+                        <span class="rolex-filter-item">New models ⌄</span>
+                        <span class="rolex-filter-item">Collection ⌄</span>
+                        <span class="rolex-filter-item">Size ⌄</span>
+                        <span class="rolex-filter-item">Material ⌄</span>
+                        <span class="rolex-filter-item">Filters ⚲</span>
+                    </div>
+                    <div class="rolex-filter-sort">
+                        Sort by ⌄
+                    </div>
+                </div>
+
+                <div class="products-section-header">
+                    <h2 class="products-title-centered">Products</h2>
+                    <p class="products-subtitle-centered">Explore our curated selection of four iconic Rolex timepieces with certified chronometric precision.</p>
+                </div>
+
+                <div class="rolex-showcase-grid">
+
+                    <article class="rolex-card">
+                        <a href="#details-day-date-40" class="rolex-card-media" title="View Day-Date 40 Details">
+                            <span class="rolex-card-badge">Presidential</span>
+                            <div class="rolex-card-img-wrap">
+                                <img src="watch_1.png" alt="Rolex Day-Date 40" class="rolex-card-img" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="rolex-card-body">
+                            <div>
+                                <span class="rolex-card-series">Oyster Perpetual</span>
+                                <h3 class="rolex-card-title">Day-Date 40</h3>
+                                <p class="rolex-card-sub">Oyster, 40 mm, Oystersteel and white gold</p>
+                            </div>
+                            <div>
+                                <div class="rolex-card-price-row">
+                                    <span class="rolex-card-price">$41,500</span>
+                                    <span class="rolex-card-price-cur">USD</span>
+                                </div>
+                                <div class="rolex-card-actions">
+                                    <a href="#details-day-date-40" class="btn-card-view-details">
+                                        <span>View Details</span>
+                                        <span>→</span>
+                                    </a>
+                                    <a href="https://wa.me/919999999999?text=Hello%2C%20I%20am%20interested%20in%20the%20Day-Date%2040%20(Aurelius%20Classic)%20watch." target="_blank" rel="noopener noreferrer" class="btn-card-whatsapp" title="Enquire on WhatsApp">
+                                        <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rolex-card">
+                        <a href="#details-daytona" class="rolex-card-media" title="View Daytona Details">
+                            <span class="rolex-card-badge">Motorsport</span>
+                            <div class="rolex-card-img-wrap">
+                                <img src="watch_2.png" alt="Rolex Cosmograph Daytona" class="rolex-card-img" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="rolex-card-body">
+                            <div>
+                                <span class="rolex-card-series">Oyster Perpetual</span>
+                                <h3 class="rolex-card-title">Cosmograph Daytona</h3>
+                                <p class="rolex-card-sub">Oyster, 40 mm, 18 ct Everose gold</p>
+                            </div>
+                            <div>
+                                <div class="rolex-card-price-row">
+                                    <span class="rolex-card-price">$44,200</span>
+                                    <span class="rolex-card-price-cur">USD</span>
+                                </div>
+                                <div class="rolex-card-actions">
+                                    <a href="#details-daytona" class="btn-card-view-details">
+                                        <span>View Details</span>
+                                        <span>→</span>
+                                    </a>
+                                    <a href="https://wa.me/919999999999?text=Hello%2C%20I%20am%20interested%20in%20the%20Cosmograph%20Daytona%20(Heritage%20Chronograph)%20watch." target="_blank" rel="noopener noreferrer" class="btn-card-whatsapp" title="Enquire on WhatsApp">
+                                        <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rolex-card">
+                        <a href="#details-sky-dweller" class="rolex-card-media" title="View Sky-Dweller Details">
+                            <span class="rolex-card-badge">Annual Calendar</span>
+                            <div class="rolex-card-img-wrap">
+                                <img src="watch_3.png" alt="Rolex Sky-Dweller" class="rolex-card-img" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="rolex-card-body">
+                            <div>
+                                <span class="rolex-card-series">Oyster Perpetual</span>
+                                <h3 class="rolex-card-title">Sky-Dweller</h3>
+                                <p class="rolex-card-sub">Oyster, 42 mm, Everose gold and slate dial</p>
+                            </div>
+                            <div>
+                                <div class="rolex-card-price-row">
+                                    <span class="rolex-card-price">$52,800</span>
+                                    <span class="rolex-card-price-cur">USD</span>
+                                </div>
+                                <div class="rolex-card-actions">
+                                    <a href="#details-sky-dweller" class="btn-card-view-details">
+                                        <span>View Details</span>
+                                        <span>→</span>
+                                    </a>
+                                    <a href="https://wa.me/919999999999?text=Hello%2C%20I%20am%20interested%20in%20the%20Sky-Dweller%20(Regent%20Automatic)%20watch." target="_blank" rel="noopener noreferrer" class="btn-card-whatsapp" title="Enquire on WhatsApp">
+                                        <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rolex-card">
+                        <a href="#details-datejust-41" class="rolex-card-media" title="View Datejust 41 Details">
+                            <span class="rolex-card-badge">Classic Icon</span>
+                            <div class="rolex-card-img-wrap">
+                                <img src="watch_4.png" alt="Rolex Datejust 41" class="rolex-card-img" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="rolex-card-body">
+                            <div>
+                                <span class="rolex-card-series">Oyster Perpetual</span>
+                                <h3 class="rolex-card-title">Datejust 41</h3>
+                                <p class="rolex-card-sub">Oyster, 41 mm, Oystersteel and mint green dial</p>
+                            </div>
+                            <div>
+                                <div class="rolex-card-price-row">
+                                    <span class="rolex-card-price">$11,250</span>
+                                    <span class="rolex-card-price-cur">USD</span>
+                                </div>
+                                <div class="rolex-card-actions">
+                                    <a href="#details-datejust-41" class="btn-card-view-details">
+                                        <span>View Details</span>
+                                        <span>→</span>
+                                    </a>
+                                    <a href="https://wa.me/919999999999?text=Hello%2C%20I%20am%20interested%20in%20the%20Datejust%2041%20(Monarch%20Signature)%20watch." target="_blank" rel="noopener noreferrer" class="btn-card-whatsapp" title="Enquire on WhatsApp">
+                                        <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <div id="details-day-date-40" class="rolex-modal-backdrop">
+            <a href="#products" class="rolex-modal-overlay" aria-label="Close modal"></a>
+            <div class="rolex-modal-card">
+                <a href="#products" class="rolex-modal-close-btn" aria-label="Close modal">&times;</a>
+                <div class="rolex-modal-grid">
+                    <div class="rolex-modal-media-col">
+                        <span class="modal-badge-tag">Presidential Collection</span>
+                        <div class="modal-img-container">
+                            <img src="watch_1.png" alt="Rolex Day-Date 40" class="modal-watch-image">
+                        </div>
+                        <div class="modal-cert-footer">
+                            <span class="modal-cert-crown">♛</span>
+                            <span>Superlative Chronometer Officially Certified</span>
+                        </div>
+                    </div>
+                    <div class="rolex-modal-info-col">
+                        <div class="modal-brand-header">
+                            <img src="logo.png" alt="Rolex Logo" class="modal-brand-crown">
+                            <span class="modal-brand-text">ROLEX</span>
+                        </div>
+                        <h2 class="modal-watch-title">Day-Date 40</h2>
+                        <p class="modal-watch-ref">Reference 228239</p>
+                        <p class="modal-watch-desc">
+                            The ultimate watch of prestige. Launched in 1956, the Day-Date was a world-first: the first watch to indicate the day of the week spelt out in full in an arc-shaped window at 12 o'clock on the dial.
+                        </p>
+                        <div class="modal-price-box">
+                            <span class="modal-price-label">Official Showcase Price</span>
+                            <span class="modal-price-val">$41,500 USD</span>
+                        </div>
+                        <h4 class="modal-specs-title">Technical Specifications</h4>
+                        <div class="modal-specs-list">
+                            <div class="spec-row"><span class="spec-label">Model Case</span><span class="spec-value">Oyster, 40 mm, Oystersteel &amp; White Gold</span></div>
+                            <div class="spec-row"><span class="spec-label">Bezel</span><span class="spec-value">Fluted bezel</span></div>
+                            <div class="spec-row"><span class="spec-label">Dial</span><span class="spec-value">Olive green, sunray finish, 18 ct Roman numerals</span></div>
+                            <div class="spec-row"><span class="spec-label">Movement</span><span class="spec-value">Calibre 3255, Perpetual, mechanical, self-winding</span></div>
+                            <div class="spec-row"><span class="spec-label">Precision</span><span class="spec-value">-2/+2 sec/day, after casing</span></div>
+                            <div class="spec-row"><span class="spec-label">Power Reserve</span><span class="spec-value">Approximately 70 hours</span></div>
+                            <div class="spec-row"><span class="spec-label">Bracelet</span><span class="spec-value">President, semi-circular three-piece links</span></div>
+                            <div class="spec-row"><span class="spec-label">Clasp</span><span class="spec-value">Concealed folding Crownclasp</span></div>
+                            <div class="spec-row"><span class="spec-label">Water Resistance</span><span class="spec-value">Waterproof to 100 metres / 330 feet</span></div>
+                        </div>
+                        <div class="modal-actions-row">
+                            <a href="https://wa.me/919999999999?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20the%20Rolex%20Day-Date%2040%20(Ref.%20228239)." target="_blank" rel="noopener noreferrer" class="btn-modal-wa">
+                                <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                </svg>
+                                <span>WhatsApp Concierge</span>
+                            </a>
+                            <a href="#contact" class="btn-modal-salon">Book Salon Viewing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="details-daytona" class="rolex-modal-backdrop">
+            <a href="#products" class="rolex-modal-overlay" aria-label="Close modal"></a>
+            <div class="rolex-modal-card">
+                <a href="#products" class="rolex-modal-close-btn" aria-label="Close modal">&times;</a>
+                <div class="rolex-modal-grid">
+                    <div class="rolex-modal-media-col">
+                        <span class="modal-badge-tag">Motorsport Chronograph</span>
+                        <div class="modal-img-container">
+                            <img src="watch_2.png" alt="Rolex Cosmograph Daytona" class="modal-watch-image">
+                        </div>
+                        <div class="modal-cert-footer">
+                            <span class="modal-cert-crown">♛</span>
+                            <span>Superlative Chronometer Officially Certified</span>
+                        </div>
+                    </div>
+                    <div class="rolex-modal-info-col">
+                        <div class="modal-brand-header">
+                            <img src="logo.png" alt="Rolex Logo" class="modal-brand-crown">
+                            <span class="modal-brand-text">ROLEX</span>
+                        </div>
+                        <h2 class="modal-watch-title">Cosmograph Daytona</h2>
+                        <p class="modal-watch-ref">Reference 126505</p>
+                        <p class="modal-watch-desc">
+                            An iconic timepiece inextricably linked with high performance motor sport. The Cosmograph Daytona has established itself as the benchmark for those with an enduring passion for speed and horological excellence.
+                        </p>
+                        <div class="modal-price-box">
+                            <span class="modal-price-label">Official Showcase Price</span>
+                            <span class="modal-price-val">$44,200 USD</span>
+                        </div>
+                        <h4 class="modal-specs-title">Technical Specifications</h4>
+                        <div class="modal-specs-list">
+                            <div class="spec-row"><span class="spec-label">Model Case</span><span class="spec-value">Oyster, 40 mm, 18 ct Everose gold</span></div>
+                            <div class="spec-row"><span class="spec-label">Bezel</span><span class="spec-value">18 ct Everose gold with engraved tachymetric scale</span></div>
+                            <div class="spec-row"><span class="spec-label">Dial</span><span class="spec-value">Sundust with black snailed chronograph counters</span></div>
+                            <div class="spec-row"><span class="spec-label">Movement</span><span class="spec-value">Calibre 4131, Manufacture Rolex Chronograph</span></div>
+                            <div class="spec-row"><span class="spec-label">Precision</span><span class="spec-value">-2/+2 sec/day, after casing</span></div>
+                            <div class="spec-row"><span class="spec-label">Power Reserve</span><span class="spec-value">Approximately 72 hours</span></div>
+                            <div class="spec-row"><span class="spec-label">Bracelet</span><span class="spec-value">Oyster, flat three-piece links in Everose gold</span></div>
+                            <div class="spec-row"><span class="spec-label">Clasp</span><span class="spec-value">Folding Oysterlock safety clasp with Easylink 5 mm</span></div>
+                            <div class="spec-row"><span class="spec-label">Water Resistance</span><span class="spec-value">Waterproof to 100 metres / 330 feet</span></div>
+                        </div>
+                        <div class="modal-actions-row">
+                            <a href="https://wa.me/919999999999?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20the%20Rolex%20Cosmograph%20Daytona%20in%20Everose%20gold%20(Ref.%20126505)." target="_blank" rel="noopener noreferrer" class="btn-modal-wa">
+                                <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                </svg>
+                                <span>WhatsApp Concierge</span>
+                            </a>
+                            <a href="#contact" class="btn-modal-salon">Book Salon Viewing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="details-sky-dweller" class="rolex-modal-backdrop">
+            <a href="#products" class="rolex-modal-overlay" aria-label="Close modal"></a>
+            <div class="rolex-modal-card">
+                <a href="#products" class="rolex-modal-close-btn" aria-label="Close modal">&times;</a>
+                <div class="rolex-modal-grid">
+                    <div class="rolex-modal-media-col">
+                        <span class="modal-badge-tag">Annual Calendar</span>
+                        <div class="modal-img-container">
+                            <img src="watch_3.png" alt="Rolex Sky-Dweller" class="modal-watch-image">
+                        </div>
+                        <div class="modal-cert-footer">
+                            <span class="modal-cert-crown">♛</span>
+                            <span>Superlative Chronometer Officially Certified</span>
+                        </div>
+                    </div>
+                    <div class="rolex-modal-info-col">
+                        <div class="modal-brand-header">
+                            <img src="logo.png" alt="Rolex Logo" class="modal-brand-crown">
+                            <span class="modal-brand-text">ROLEX</span>
+                        </div>
+                        <h2 class="modal-watch-title">Sky-Dweller</h2>
+                        <p class="modal-watch-ref">Reference 336235</p>
+                        <p class="modal-watch-desc">
+                            A revolutionary timepiece designed for international travellers. It elegantly displays two time zones simultaneously and incorporates an ingenious Saros annual calendar requiring only one date correction per year.
+                        </p>
+                        <div class="modal-price-box">
+                            <span class="modal-price-label">Official Showcase Price</span>
+                            <span class="modal-price-val">$52,800 USD</span>
+                        </div>
+                        <h4 class="modal-specs-title">Technical Specifications</h4>
+                        <div class="modal-specs-list">
+                            <div class="spec-row"><span class="spec-label">Model Case</span><span class="spec-value">Oyster, 42 mm, 18 ct Everose gold</span></div>
+                            <div class="spec-row"><span class="spec-label">Bezel</span><span class="spec-value">Fluted, bidirectional rotatable Rolex Ring Command</span></div>
+                            <div class="spec-row"><span class="spec-label">Dial</span><span class="spec-value">Slate dial with off-centre 24-hour disc</span></div>
+                            <div class="spec-row"><span class="spec-label">Movement</span><span class="spec-value">Calibre 9002, Manufacture Rolex</span></div>
+                            <div class="spec-row"><span class="spec-label">Precision</span><span class="spec-value">-2/+2 sec/day, after casing</span></div>
+                            <div class="spec-row"><span class="spec-label">Power Reserve</span><span class="spec-value">Approximately 72 hours</span></div>
+                            <div class="spec-row"><span class="spec-label">Bracelet</span><span class="spec-value">Oysterflex high-performance elastomer bracelet</span></div>
+                            <div class="spec-row"><span class="spec-label">Clasp</span><span class="spec-value">Folding Oysterclasp with Rolex Glidelock system</span></div>
+                            <div class="spec-row"><span class="spec-label">Water Resistance</span><span class="spec-value">Waterproof to 100 metres / 330 feet</span></div>
+                        </div>
+                        <div class="modal-actions-row">
+                            <a href="https://wa.me/919999999999?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20the%20Rolex%20Sky-Dweller%20(Ref.%20336235)." target="_blank" rel="noopener noreferrer" class="btn-modal-wa">
+                                <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                </svg>
+                                <span>WhatsApp Concierge</span>
+                            </a>
+                            <a href="#contact" class="btn-modal-salon">Book Salon Viewing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="details-datejust-41" class="rolex-modal-backdrop">
+            <a href="#products" class="rolex-modal-overlay" aria-label="Close modal"></a>
+            <div class="rolex-modal-card">
+                <a href="#products" class="rolex-modal-close-btn" aria-label="Close modal">&times;</a>
+                <div class="rolex-modal-grid">
+                    <div class="rolex-modal-media-col">
+                        <span class="modal-badge-tag">Classic Icon</span>
+                        <div class="modal-img-container">
+                            <img src="watch_4.png" alt="Rolex Datejust 41" class="modal-watch-image">
+                        </div>
+                        <div class="modal-cert-footer">
+                            <span class="modal-cert-crown">♛</span>
+                            <span>Superlative Chronometer Officially Certified</span>
+                        </div>
+                    </div>
+                    <div class="rolex-modal-info-col">
+                        <div class="modal-brand-header">
+                            <img src="logo.png" alt="Rolex Logo" class="modal-brand-crown">
+                            <span class="modal-brand-text">ROLEX</span>
+                        </div>
+                        <h2 class="modal-watch-title">Datejust 41</h2>
+                        <p class="modal-watch-ref">Reference 126300</p>
+                        <p class="modal-watch-desc">
+                            The archetype of the modern wristwatch. Spanning generations with its timeless aesthetics and peerless functions, the Datejust remains one of the world's most recognized and celebrated timepieces.
+                        </p>
+                        <div class="modal-price-box">
+                            <span class="modal-price-label">Official Showcase Price</span>
+                            <span class="modal-price-val">$11,250 USD</span>
+                        </div>
+                        <h4 class="modal-specs-title">Technical Specifications</h4>
+                        <div class="modal-specs-list">
+                            <div class="spec-row"><span class="spec-label">Model Case</span><span class="spec-value">Oyster, 41 mm, Oystersteel</span></div>
+                            <div class="spec-row"><span class="spec-label">Bezel</span><span class="spec-value">Fluted bezel</span></div>
+                            <div class="spec-row"><span class="spec-label">Dial</span><span class="spec-value">Mint green dial with sunray finish &amp; Chromalight display</span></div>
+                            <div class="spec-row"><span class="spec-label">Movement</span><span class="spec-value">Calibre 3235, Manufacture Rolex</span></div>
+                            <div class="spec-row"><span class="spec-label">Precision</span><span class="spec-value">-2/+2 sec/day, after casing</span></div>
+                            <div class="spec-row"><span class="spec-label">Power Reserve</span><span class="spec-value">Approximately 70 hours</span></div>
+                            <div class="spec-row"><span class="spec-label">Bracelet</span><span class="spec-value">Jubilee, five-piece links in Oystersteel</span></div>
+                            <div class="spec-row"><span class="spec-label">Clasp</span><span class="spec-value">Folding Oysterclasp with Easylink 5 mm extension</span></div>
+                            <div class="spec-row"><span class="spec-label">Water Resistance</span><span class="spec-value">Waterproof to 100 metres / 330 feet</span></div>
+                        </div>
+                        <div class="modal-actions-row">
+                            <a href="https://wa.me/919999999999?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20the%20Rolex%20Datejust%2041%20(Ref.%20126300)." target="_blank" rel="noopener noreferrer" class="btn-modal-wa">
+                                <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                </svg>
+                                <span>WhatsApp Concierge</span>
+                            </a>
+                            <a href="#contact" class="btn-modal-salon">Book Salon Viewing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about">
+            <div class="container">
+                <div class="about-rolex-flex">
+                    <div class="about-rolex-img-col">
+                        <img src="watch_2.png" alt="Rolex Everose Gold Daytona Craftsmanship">
+                    </div>
+
+                    <div class="about-rolex-text-col">
+                        <span class="about-rolex-eyebrow">Horological Heritage</span>
+                        <h2 class="about-rolex-title">The Pursuit of Absolute Perfection.</h2>
+                        <p class="about-rolex-p">
+                            For generations, Rolex has maintained an unyielding dedication to precision, timeless design, and unmatched individuality. Each watch is not merely an instrument of time, but an extraordinary work of art conceived to outlive the passing of eras.
+                        </p>
+                        <p class="about-rolex-p">
+                            From the selection of pristine precious metals to the meticulous hand-assembly of each oscillating movement, every detail is considered with reverence. We craft timepieces for those who demand nothing less than supreme horological excellence.
+                        </p>
+
+                        <div class="about-rolex-stats">
+                            <div class="stat-box">
+                                <h4>01 · Precision</h4>
+                                <p>Superlative Chronometer tested to &plusmn;2 sec/day.</p>
+                            </div>
+                            <div class="stat-box">
+                                <h4>02 · Metallurgy</h4>
+                                <p>18 ct Everose gold &amp; aerospace Oystersteel.</p>
+                            </div>
+                            <div class="stat-box">
+                                <h4>03 · Legacy</h4>
+                                <p>Pioneering waterproof Oyster case since 1926.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact-rolex-grid">
+                    <div class="contact-salon-info">
+                        <div>
+                            <h3 class="salon-heading">Flagship Salon</h3>
+                            <p class="salon-sub">
+                                Visit our private boutique for a personalized horological consultation and fitting.
+                            </p>
+
+                            <div class="salon-item">
+                                <span class="salon-item-label">Location</span>
+                                <span class="salon-item-value">750 Fifth Avenue &amp; 57th Street, New York / Geneva Salon</span>
+                            </div>
+                            <div class="salon-item">
+                                <span class="salon-item-label">Phone</span>
+                                <span class="salon-item-value">+91 99999 99999</span>
+                            </div>
+                            <div class="salon-item">
+                                <span class="salon-item-label">Email</span>
+                                <span class="salon-item-value">concierge@rolex-showcase.com</span>
+                            </div>
+                            <div class="salon-item">
+                                <span class="salon-item-label">Hours</span>
+                                <span class="salon-item-value">Monday – Saturday: 10:00 AM – 7:30 PM<br>Sunday: Private VIP Appointments</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-whatsapp-box">
+                            <h4>Have a timepiece in mind?</h4>
+                            <p>Talk directly with our concierge team on WhatsApp for immediate assistance.</p>
+                            <a href="https://wa.me/919999999999?text=Hello%2C%20I%20would%20like%20to%20book%20a%20private%20viewing%20for%20the%20Rolex%20luxury%20collection." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-large">
+                                <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.4 8.84 7.66C8.61 7.92 7.96 8.53 7.96 9.77C7.96 11.01 8.87 12.2 9.00 12.37C9.13 12.54 10.76 15.05 13.25 16.13C13.84 16.39 14.3 16.54 14.66 16.66C15.25 16.85 15.79 16.82 16.22 16.76C16.7 16.69 17.7 16.16 17.9 15.58C18.11 15 18.11 14.51 18.05 14.41C17.99 14.31 17.83 14.25 17.58 14.13C17.34 14.01 16.13 13.41 15.9 13.33C15.68 13.25 15.51 13.21 15.35 13.46C15.18 13.7 14.71 14.26 14.56 14.43C14.42 14.59 14.27 14.61 14.03 14.49C13.78 14.37 12.98 14.11 12.04 13.27C11.31 12.61 10.81 11.8 10.67 11.55C10.52 11.31 10.65 11.17 10.77 11.05C10.88 10.94 11.02 10.75 11.16 10.59C11.3 10.42 11.35 10.3 11.44 10.12C11.53 9.94 11.49 9.78 11.43 9.66C11.37 9.54 10.88 8.34 10.68 7.84C10.48 7.36 10.28 7.42 10.13 7.41C9.99 7.41 9.83 7.34 9.53 7.34Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel">
+                        <h3 class="form-heading">Request an Appointment</h3>
+                        <p class="form-sub">Complete the inquiry details below and our concierge will contact you within 24 hours.</p>
+
+                        <form action="#contact" method="get" id="appointment-form">
+                            <div class="form-group-rolex">
+                                <label for="client-name" class="form-label-rolex">Full Name</label>
+                                <input type="text" id="client-name" name="name" class="form-input-rolex" placeholder="e.g. Lord Alexander Wright" required>
+                            </div>
+
+                            <div class="form-group-rolex">
+                                <label for="client-email" class="form-label-rolex">Email Address</label>
+                                <input type="email" id="client-email" name="email" class="form-input-rolex" placeholder="e.g. alexander@luxury.com" required>
+                            </div>
+
+                            <div class="form-group-rolex">
+                                <label for="client-model" class="form-label-rolex">Timepiece of Interest</label>
+                                <select id="client-model" name="model" class="form-select-rolex">
+                                    <option value="day-date-40">Day-Date 40 (Oystersteel &amp; White Gold)</option>
+                                    <option value="daytona">Cosmograph Daytona (18 ct Everose Gold)</option>
+                                    <option value="sky-dweller">Sky-Dweller (Everose Gold &amp; Slate Dial)</option>
+                                    <option value="datejust-41">Datejust 41 (Oystersteel &amp; Mint Green)</option>
+                                    <option value="bespoke">General Horological Consultation</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-rolex">
+                                <label for="client-message" class="form-label-rolex">Message / Preferred Date</label>
+                                <textarea id="client-message" name="message" class="form-textarea-rolex" placeholder="Please specify your preferred viewing date or any particular request..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit-rolex">Submit Appointment Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-rolex-grid">
+                <div>
+                    <div class="footer-crown-lockup">
+                        <img src="logo.png" alt="ROLEX Crown Logo" class="footer-crown-icon">
+                        <span class="footer-brand-title">ROLEX</span>
+                    </div>
+                    <p class="footer-bio">
+                        The pinnacle of Swiss horology, precision chronometry, and timeless luxury craftsmanship. Built to transcend generations.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-h4">Navigation</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-h4">Collection</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="#details-day-date-40">Day-Date 40</a></li>
+                        <li><a href="#details-daytona">Cosmograph Daytona</a></li>
+                        <li><a href="#details-sky-dweller">Sky-Dweller</a></li>
+                        <li><a href="#details-datejust-41">Datejust 41</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-h4">Showroom</h4>
+                    <p class="footer-salon-desc">
+                        Rue François-Dussaud 3-5-7<br>
+                        1211 Geneva 26, Switzerland<br>
+                        Tel: +91 99999 99999<br>
+                        Email: concierge@rolex-showcase.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <p>&copy; 2026 ROLEX. All rights reserved. Official Luxury Showcase.</p>
+                <div>
+                    <a href="#home">Privacy Policy</a>
+                    <a href="#home">Terms of Service</a>
+                    <a href="#home">Horological Warranty</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
